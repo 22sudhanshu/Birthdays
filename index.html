@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little World Made For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+    <source src="music.mpeg" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵 Music</button>
+
+<!-- OPENING -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <p class="small-heading">A LITTLE SURPRISE FOR SOMEONE SPECIAL</p>
+
+        <h1>Happy Birthday</h1>
+
+        <h2 class="name">Beautiful Soul ❤️</h2>
+
+        <p>
+            Today isn't just another day.
+            Today is a celebration of someone
+            who makes the world a little more beautiful.
+        </p>
+
+        <button onclick="startJourney()" class="main-btn">
+            Open Your Surprise ✨
+        </button>
+    </div>
+
+    <div class="scroll-text">SCROLL TO EXPLORE ↓</div>
+
+</section>
+
+
+<!-- STORY -->
+<section class="story hidden" id="story">
+
+    <h2 class="section-title">A Little Story About You</h2>
+
+    <p class="subtitle">
+        Eight moments, countless reasons to smile.
+    </p>
+
+    <div class="gallery">
+
+        <div class="photo-card">
+            <img src="images/img1.png" alt="Beautiful moment">
+            <h3>Elegance in Every Frame 🌸</h3>
+            <p>Some people wear beautiful outfits. You make every outfit beautiful.</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/img2.png" alt="Beautiful moment">
+            <h3>Your Magical Smile ✨</h3>
+            <p>There is something about your smile that makes a moment unforgettable.</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/img3.png" alt="Beautiful moment">
+            <h3>Simply Graceful ❤️</h3>
+            <p>Your simplicity and elegance have their own kind of magic.</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/img4.png" alt="Beautiful moment">
+            <h3>Little Adventures 🌿</h3>
+            <p>May life always give you beautiful places to explore and memories to collect.</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/img5.png" alt="Beautiful moment">
+            <h3>Beautiful Memories 🌙</h3>
+            <p>Every picture holds a moment, and every moment has its own story.</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/img6.png" alt="Beautiful moment">
+            <h3>That Natural Charm 🦋</h3>
+            <p>You don't need to try too hard. Being yourself is your superpower.</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/img7.png" alt="Beautiful moment">
+            <h3>Tradition Meets Beauty 🌷</h3>
+            <p>Your personality shines in every little detail.</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/img8.png" alt="Beautiful moment">
+            <h3>Just Being YOU 💗</h3>
+            <p>And honestly, this is the most beautiful version of all.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LETTER -->
+<section class="letter hidden">
+
+    <div class="letter-box">
+
+        <span class="flower">🌸</span>
+
+        <h2>A Little Something From My Heart</h2>
+
+        <p>
+            You know, some people are special not because they are
+            perfect, but because of the little things that make them
+            who they are.
+        </p>
+
+        <p>
+            Your smile, your nature, your simplicity, your uniqueness
+            and the way you carry yourself — these are the things
+            that make you different.
+        </p>
+
+        <p>
+            Never let the world change the beautiful person you are.
+            Keep smiling, keep growing, keep exploring and keep being
+            that wonderful version of yourself.
+        </p>
+
+        <p>
+            I hope this new chapter brings you endless happiness,
+            beautiful opportunities, unexpected adventures and
+            everything your heart wishes for.
+        </p>
+
+        <h3>Stay the way you are. ❤️</h3>
+
+        <p class="signature">With lots of wishes ✨</p>
+
+    </div>
+
+</section>
+
+
+<!-- CAKE -->
+<section class="cake-section hidden">
+
+    <h2>One More Little Surprise 🎂</h2>
+
+    <p>Make a wish and tap the candles!</p>
+
+    <div class="cake">
+        <div class="candles">
+            <span onclick="blow(this)">🕯️</span>
+            <span onclick="blow(this)">🕯️</span>
+            <span onclick="blow(this)">🕯️</span>
+        </div>
+
+        <div class="cake-top"></div>
+        <div class="cake-middle"></div>
+        <div class="cake-bottom"></div>
+    </div>
+
+    <p id="wish-message">Your wishes deserve to come true. 💫</p>
+
+    <button class="main-btn" onclick="celebrate()">
+        Celebrate! 🎉
+    </button>
+
+</section>
+
+
+<!-- FINAL SURPRISE -->
+<section class="final-section hidden" id="final">
+
+    <div class="final-content">
+
+        <div class="gift">🎁</div>
+
+        <h1>One Last Thing...</h1>
+
+        <p>
+            No matter where life takes you,
+            I hope you never run out of reasons to smile.
+        </p>
+
+        <h2>
+            Keep shining, Beautiful Soul. ❤️
+        </h2>
+
+        <button class="main-btn" onclick="showSurprise()">
+            Open Your Final Message 💌
+        </button>
+
+        <div id="final-message" class="final-message">
+            Happy Birthday once again!
+            The world is lucky to have someone like you. 🌸
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    Made with ❤️ and lots of good wishes.
+    <br>
+    A little birthday world, just for you.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
